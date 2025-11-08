@@ -1,0 +1,40 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "instagram-search-raycast-extension",
+  "title": "Instagram Search",
+  "description": "Perform search on Instagram in one click",
+  "icon": "icon.png",
+  "author": "room_js",
+  "license": "MIT",
+  "platforms": [
+    "Windows",
+    "macOS"
+  ],
+  "commands": [
+    {
+      "name": "search",
+      "title": "Search On Instagram",
+      "description": "Search on Instagram in One Click",
+      "mode": "view"
+    }
+  ],
+  "tools": [],
+  "dependencies": {
+    "@raycast/api": "1.103.6",
+    "@raycast/utils": "2.2.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.4",
+    "@types/node": "24.10.0",
+    "@types/react": "^19.2.2",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "biome check",
+    "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
